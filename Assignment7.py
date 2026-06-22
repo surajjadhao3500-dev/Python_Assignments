@@ -1,38 +1,30 @@
-t1 = (1, 2, 3)
-t2 = (4, 5, 6)
+#Write a Python program to create a tuple and perform basic operations like length, concatenation, repetition, and membership.
+t=(1, 2, 3, 4, 5)
+print("Length:", len(t))
+print("Concatenation of tuple with (6, 7):", t + (6, 7))
+print("Repetition:", t * 2)
+print("Membership check:", 3 in t)
 
-print("Length:", len(t1))
-print("Concatenation:", t1 + t2)
-print("Repetition:", t1 * 2)
-print("Membership:", 2 in t1)
-
-t = ("Python", "Java", "C", "C++", "JavaScript")
-
-print("Index 1:", t[1])
-print("Negative Index:", t[-1])
+#Write a program to demonstrate indexing, negative indexing, slicing, and iteration on a tuple.   
+t=(1, 2, 3, 4, 5)
+print("Indexing:", t[2])
+print("Negative Indexing:", t[-1])
 print("Slicing:", t[1:4])
-
 print("Iteration:")
-for item in t:
-    print(item)
+for i in t:
+    print(i)
 
-    t = (10, 20, 30)
+#Write a Python program to show that tuples are immutable and demonstrate tuple deletion using del.  
+t=(1, 2, 3, 4, 5)
+t[0] = 10  # This will raise an error because tuples are immutable
+print(t)
+del t  # This will delete the entire tuple
+print(t)
 
-# Tuples are immutable
-# t[0] = 100   # Error
-
-print("Original Tuple:", t)
-
-del t
-print("Tuple Deleted")
-
-numbers = (10, 20, 30, 40, 50)
-
-print("Length:", len(numbers))
-print("Maximum:", max(numbers))
-print("Minimum:", min(numbers))
-
-lst = [1, 2, 3]
-tup = tuple(lst)
-
-print("Converted Tuple:", tup)
+#Write a program to apply built-in tuple functions like len(), max(), min(), and tuple() on a given sequence. 
+l=[1, 2, 3, 4, 5]
+t=tuple(l)
+print("Tuple:", t)
+print("Length:", len(t))
+print("Max:", max(t))
+print("Min:", min(t))
