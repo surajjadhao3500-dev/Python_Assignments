@@ -1,49 +1,23 @@
-# Demonstration of different Python Data Types
+a=10
+print(a, type(a))
 
-#Integer
-integer_value = 10
-print("Integer Value:", integer_value)
-print("Type:", type(integer_value))
-print()
+b=10.5
+print(b, type(b))
 
-#Float
-float_value = 10.5
-print("Float Value:", float_value)
-print("Type:", type(float_value))
-print()
+c="Hello"
+print(c, type(c))
 
-#String
-string_value = "Hello Python"
-print("String Value:", string_value)
-print("Type:", type(string_value))
-print()
+d=True
+print(d, type(d))
 
-#Boolean
-boolean_value = True
-print("Boolean Value:", boolean_value)
-print("Type:", type(boolean_value))
-print()
+e=[1, 2, 3, 4, 5]
+print(e, type(e))
 
-#List
-list_value = [1, 2, 3, "Python", 5.5]
-print("List Value:", list_value)
-print("Type:", type(list_value))
-print() 
+f=(1, 2, 3, 4, 5)
+print(f, type(f))
 
-#Tuple
-tuple_value = (1, 2, 3, "Data")
-print("Tuple Value:", tuple_value)
-print("Type:", type(tuple_value))
-print()
+g={1, 2, 3, 4, 5}
+print(g, type(g))
 
-#Dictionary
-dictionary_value = {"Name": "Suraj", "Age":18, "Course": "Computer Science"}
-print("Dictionary Value:", dictionary_value)
-print("Type:", type(dictionary_value))
-print()
-
-#Set
-set_value = {1, 2, 3, 4, 4, 5}
-print("Set Value:", set_value)
-print("Type:", type(set_value))
-print()
+h={"a": 1, "b": 2, "c": 3}
+print(h, type(h))
