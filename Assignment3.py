@@ -1,45 +1,31 @@
-# Program to find the greatest of three numbers
-
-print("Question-1")
-a = int(input("Enter first number = "))
-b = int(input("Enter second number = "))
-c = int(input("Enter third number = "))
-
-if a >= b and a >= c:
-    print("Greatest number is =", a)
-elif b >= a and b >= c:
-    print("Greatest number is =", b)
+#1. WAP to find out greatest of 3 numbers 
+a=int(input("Enter first number:"))
+b=int(input("Enter second number:"))
+c=int(input("Enter third number:"))
+if a>b and a>c:
+    print(a,"is greatest")
+elif b>a and b>c:
+    print(b,"is greatest")
 else:
-    print("Greatest number is =", c)
+    print(c,"is greatest")
 
-# Program to check if a number is even or odd
-
-print("Question-2")
-num = int(input("Enter a number = "))
-
-if num % 2 == 0:
-    print("The number is Even")
+#2. WAP to find whether given number is odd or even
+n=int(input("Enter a number:"))
+if n%2 == 0:
+    print(n, "is even")
 else:
-    print("The number is Odd")
+    print(n, "is odd")
 
-# Program to check if a character is an uppercase alphabet, lowercase alphabet, or not an alphabet
-
-print("Question-3")
-ch = input("Enter a character = ")
-
-if ch >= 'A' and ch <= 'Z':
-    print("Uppercase Alphabet")
-elif ch >= 'a' and ch <= 'z':
-    print("Lowercase Alphabet")
+#3. Write a C program to check whether a character is uppercase or lowercase alphabet 
+ch = input("Enter a character: ")
+if ch.isupper():
+    print(ch, "is an uppercase alphabet")
 else:
-    print("Not an Alphabet")
+    print(ch, "is a lowercase alphabet")
 
-# Program to check if the input is a number or a character  
-
-print("Question-4")
-value = input("Enter any value = ")
-
-if value.isdigit():
-    print("The input is a Number")
+#4. WAP to find whether given input is number or character 
+a=input("Enter anything:")
+if a.isdigit():
+    print(a, "is a number")
 else:
-    print("The input is a Character")
+    print(a, "is a character")
